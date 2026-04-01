@@ -11,12 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/alt.css" />
   </head>
   <body>
+    <a class="alt-skip" href="#event">Skip to content</a>
+
     <header class="alt-hero" id="home">
       <div class="alt-container">
         <div class="alt-hero__inner">
@@ -29,6 +31,7 @@
             rel="nofollow ugc"
             >Register Now</a
           >
+          <p class="alt-hero__hint" aria-hidden="true">Scroll for details</p>
         </div>
       </div>
     </header>
@@ -38,6 +41,7 @@
         <div class="alt-container">
           <div class="alt-event__grid">
             <div class="alt-event__main">
+              <p class="alt-eyebrow">The experience</p>
               <h2 class="alt-event__title">Join us April 28–29</h2>
               <div class="alt-event__body">
                 <p>
@@ -69,55 +73,59 @@
         </div>
       </section>
 
-      <section class="alt-schedule" id="schedule">
+      <section class="alt-schedule" id="schedule" aria-labelledby="schedule-heading">
         <div class="alt-container">
           <header class="alt-schedule__head">
-            <h2>Schedule</h2>
-            <p>April 29 at The Mansion — key blocks and sessions.</p>
+            <div>
+              <span class="alt-badge">April 29 · Main day</span>
+              <h2 id="schedule-heading">Schedule</h2>
+            </div>
           </header>
 
           <article class="alt-schedule-block">
-            <p class="alt-schedule-block__label">Advisors</p>
             <div class="alt-schedule-block__grid">
-              <div>
-                <div class="alt-item">
-                  <div class="alt-item__time">8:00 AM - 8:30 AM</div>
-                  <h4 class="alt-item__title">Breakfast</h4>
-                </div>
-                <div class="alt-item">
-                  <div class="alt-item__time">8:45 AM - 10:00 AM</div>
-                  <h4 class="alt-item__title">Town Hall Style Presentations</h4>
-                  <p class="alt-item__meta">
-                    CEO Opening Remarks | Investment Management | Integrated Planning Group | Panel
-                  </p>
-                </div>
-                <div class="alt-item">
-                  <div class="alt-item__time">10:00 AM - 10:30 AM</div>
-                  <h4 class="alt-item__title">Jump AI Intro</h4>
-                  <p class="alt-item__meta">Michael D'Amico — Executive Vice President</p>
-                </div>
-              </div>
               <figure class="alt-schedule__figure">
                 <img src="assets/1.png" alt="Schedule — morning sessions overview" loading="lazy" />
               </figure>
+              <div class="alt-schedule-block__stack">
+                <p class="alt-schedule-block__label">Advisors</p>
+                <div class="alt-timeline">
+                  <div class="alt-item">
+                    <div class="alt-item__time">8:00 AM - 8:30 AM</div>
+                    <h3 class="alt-item__title">Breakfast</h3>
+                  </div>
+                  <div class="alt-item">
+                    <div class="alt-item__time">8:45 AM - 10:00 AM</div>
+                    <h3 class="alt-item__title">Town Hall Style Presentations</h3>
+                    <p class="alt-item__meta">
+                      CEO Opening Remarks | Investment Management | Integrated Planning Group | Panel
+                    </p>
+                  </div>
+                  <div class="alt-item">
+                    <div class="alt-item__time">10:00 AM - 10:30 AM</div>
+                    <h3 class="alt-item__title">Jump AI Intro</h3>
+                    <p class="alt-item__meta">Michael D'Amico — Executive Vice President</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </article>
 
-          <article class="alt-schedule-block">
+          <article class="alt-schedule-block alt-schedule-block--reverse">
             <div class="alt-schedule-block__grid">
-              <div>
+              <div class="alt-timeline">
                 <div class="alt-item">
                   <div class="alt-item__time">10:30 AM - 10:45 AM</div>
-                  <h4 class="alt-item__title">Break</h4>
+                  <h3 class="alt-item__title">Break</h3>
                 </div>
                 <div class="alt-item">
                   <div class="alt-item__time">10:45 AM - 11:15 AM</div>
-                  <h4 class="alt-item__title">M&amp;A Presentation</h4>
+                  <h3 class="alt-item__title">M&amp;A Presentation</h3>
                   <p class="alt-item__meta">Nicolas de Alejo — Head of M&amp;A and Corporate Development</p>
                 </div>
                 <div class="alt-item">
                   <div class="alt-item__time">11:15 AM - 11:45 AM</div>
-                  <h4 class="alt-item__title">Meet the Experts</h4>
+                  <h3 class="alt-item__title">Meet the Experts</h3>
                   <p class="alt-item__meta">
                     Move Health | Wealthfeed | Wealth.com | AIdentified | Jump AI | TriState Capital
                   </p>
@@ -132,19 +140,19 @@
           <article class="alt-schedule-block">
             <p class="alt-schedule-block__label">All Staff</p>
             <div class="alt-schedule-block__grid">
-              <div>
+              <div class="alt-timeline">
                 <div class="alt-item">
                   <div class="alt-item__time">12:00 PM - 1:00 PM</div>
-                  <h4 class="alt-item__title">Lunch</h4>
+                  <h3 class="alt-item__title">Lunch</h3>
                 </div>
                 <div class="alt-item">
                   <div class="alt-item__time">1:00 PM - 1:30 PM</div>
-                  <h4 class="alt-item__title">Cybersecurity</h4>
+                  <h3 class="alt-item__title">Cybersecurity</h3>
                   <p class="alt-item__meta">Steve Pfundstein — Chief Technology Officer</p>
                 </div>
                 <div class="alt-item">
                   <div class="alt-item__time">1:30 PM - 2:00 PM</div>
-                  <h4 class="alt-item__title">Comedian</h4>
+                  <h3 class="alt-item__title">Comedian</h3>
                 </div>
               </div>
               <figure class="alt-schedule__figure">
@@ -155,14 +163,14 @@
 
           <article class="alt-schedule-block">
             <div class="alt-schedule-block__grid">
-              <div>
+              <div class="alt-timeline">
                 <div class="alt-item">
                   <div class="alt-item__time">2:00 PM - 2:15 PM</div>
-                  <h4 class="alt-item__title">Break</h4>
+                  <h3 class="alt-item__title">Break</h3>
                 </div>
                 <div class="alt-item">
                   <div class="alt-item__time">2:15 PM - 4:00 PM</div>
-                  <h4 class="alt-item__title">Awards, Conference Room Dedication &amp; CEO Message</h4>
+                  <h3 class="alt-item__title">Awards, Conference Room Dedication &amp; CEO Message</h3>
                 </div>
               </div>
               <figure class="alt-schedule__figure">
