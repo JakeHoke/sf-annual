@@ -385,7 +385,8 @@ h4,
   border: 1px solid rgba(28, 98, 131, 0.15);
 }
 
-.alt-schedule-block {
+/* Merged schedule: one card outline per pair of rows */
+.alt-schedule-group {
   margin-bottom: 2.75rem;
   padding: 2rem 1.5rem;
   background: var(--alt-surface);
@@ -394,8 +395,23 @@ h4,
   box-shadow: 0 2px 16px rgba(15, 45, 72, 0.04);
 }
 
-.alt-schedule-block:last-child {
+.alt-schedule-group:last-child {
   margin-bottom: 0;
+}
+
+.alt-schedule-group .alt-schedule-block {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.alt-schedule-group .alt-schedule-block + .alt-schedule-block {
+  margin-top: 2.75rem;
+  padding-top: 2.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .alt-schedule-block__label {
@@ -427,11 +443,11 @@ h4,
 }
 
 @media (max-width: 767px) {
-  .alt-schedule-block:first-of-type .alt-schedule-block__stack {
+  .alt-schedule-group:first-of-type > .alt-schedule-block:first-child .alt-schedule-block__stack {
     order: 1;
   }
 
-  .alt-schedule-block:first-of-type .alt-schedule__figure {
+  .alt-schedule-group:first-of-type > .alt-schedule-block:first-child .alt-schedule__figure {
     order: 2;
   }
 }
