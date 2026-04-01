@@ -1,0 +1,101 @@
+:root {
+  --sf-section-pad: 5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b1220;
+  color: #e6edf3;
+}
+
+.sf-nav {
+  backdrop-filter: blur(10px);
+  background: rgba(11, 18, 32, 0.72);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sf-section {
+  padding: var(--sf-section-pad) 0;
+}
+
+.sf-section-accent {
+  background-color: rgb(28, 98, 131);
+}
+
+.sf-cta-btn {
+  background-color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  color: rgb(28, 98, 131);
+  font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  padding-top: clamp(0.55rem, 1vw, 0.7rem);
+  padding-bottom: clamp(0.55rem, 1vw, 0.7rem);
+}
+
+.sf-cta-btn:hover,
+.sf-cta-btn:focus {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-color: rgba(255, 255, 255, 1);
+  color: rgb(28, 98, 131);
+}
+
+#home.sf-section {
+  padding: 0;
+  padding-top: 4vh;
+}
+
+.sf-hero-stack {
+  min-height: 50vh;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.sf-logo {
+  width: 40vw;
+  max-width: 40vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.sf-section-light {
+  background-color: #ffffff;
+  color: #0b1220;
+}
+
+.sf-section-light .sf-muted {
+  color: rgba(11, 18, 32, 0.7);
+}
+
+.sf-section-light .sf-card {
+  background: rgba(11, 18, 32, 0.04);
+  border: 1px solid rgba(11, 18, 32, 0.12);
+}
+
+.sf-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+.sf-muted {
+  color: rgba(230, 237, 243, 0.75);
+}
+
+.sf-badge {
+  background: rgba(13, 110, 253, 0.18);
+  border: 1px solid rgba(13, 110, 253, 0.35);
+  color: #cfe2ff;
+}
+
+.sf-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
