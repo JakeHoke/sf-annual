@@ -1,4 +1,5 @@
 Keep It Simple, Stupid
+
 This repository is a lightweight, high-performance demonstration of an event registration landing page.  
 
 
